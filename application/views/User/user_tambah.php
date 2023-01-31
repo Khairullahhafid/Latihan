@@ -30,13 +30,15 @@
                     <label>User Name*</label><small>(Digunakan Untuk Username Login)</small>
                     <input type = "text" name="nama_user" value="<?=set_value('nama_user')?>" class="form-control">
                 </div> 
-                
-                <div class="form-group <?=form_error ('passkonf') ? 'has-error':null?>">
-                    <label>Konfirmasi Password</label>
-                    <input type="password" name="passkonf" value="<?=set_value('passkonf')?>" class="form-control">
-                    <?=form_error ('passkonf')?>
+                <div class="form-group <?=form_error ('password') ? 'has-error':null?>">
+                  <label for="Password">Password*</label>
+                  <input type="password" name="password" value="<?=set_value('password')?>" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-
+                <div class="form-group <?=form_error ('passkonf') ? 'has-error':null?>">
+                  <label for="Konfirmasi Password">Konfirmasi Password</label>
+                  <input type="password" name="passkonf" value="<?=set_value('passkonf')?>" class="form-control">
+                  <?=form_error ('passkonf')?>
+                </div>
                 <div class="form-group <?=form_error ('level') ? 'has-error' :null?>">
                     <label>Level</label>
                     <select name="level" class="form-control">
@@ -48,14 +50,18 @@
                     <?form_error ('level')?>
                 </div>
 
-                        <div class="form-group">
-                            <buttton type="submit" class = "btn btn success">
-                                <i class="fa fa-paper-plane"></i> Simpan
-                            </button>
-                            <a href="<?=site_url('user')?>"> <i class="btn btn-warning">
-                                <i class="fa fa-undo"></i> Kembali </i>
-                            </a>
-                        </div>
+            <!-- /.box-body -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-success"> 
+                    <i class="fa fa-paper-plane"></i> Simpan
+                </button>
+                <button type="reset" class="btn btn-warning"> 
+                    <i class="fa fa-paper-times"></i> Batal
+                </button>
+                <button type="submit" class="btn btn-success"> 
+                    <i class="fa fa-paper-undo"></i> Kembali
+                </button>
+              </div>
                     </form>
                 </div>
             </div>

@@ -45,7 +45,7 @@
                             <td><?= $data->level == 1 ? "Super User" : "User" ?></td>
                             <td class="text-center" width="160px">
                                 <a href="<?= site_url('user/edit/' . $data->user_id) ?>" class="btn btn-xs btn-warning">
-                                    <i class="glyphicon glyphicon-pencil"></i> Edit    
+                                    <i class="glyphicon glyphicon-pencil"></i>   Perbaharui    
                                 </a>
                                 <form action="<?=site_url('user/delete')?>" method="post">
                                     <input type="hidden" value="<?$data->user_id?>">

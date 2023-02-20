@@ -44,8 +44,14 @@
                             <td><?= $data->password ?></td>
                             <td><?= $data->level == 1 ? "Super User" : "User" ?></td>
                             <td class="text-center" width="160px">
-                                <a href="<?= site_url('user/edit/' . $data->user_id) ?>" class="btn btn-xs btn-warning"><span class="glyphicon glyphicon-pencil"></span> </a>
-                                <a href="<?= site_url('user/delete/' . $data->user_id) ?>" class="btn btn-xs btn-danger" onclick="return confirm('Apakah anda yakin?')"><span class="glyphicon glyphicon-trash"></span> </a>
+                                <a href="<?= site_url('user/edit/' . $data->user_id) ?>" class="btn btn-xs btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <form action="<?=site_url('user/delete'?>)" method="post">
+                                    <input type="hidden" value="<?$data->user_id?>">
+                                    <button class="btn btn-xs btn-danger">
+                                        <i class="fa fa-trash"></i> Delete
+                                    </button>
+                                </form>
+                                <!-- <a href="<?= site_url('user/delete/' . $data->user_id) ?>" class="btn btn-xs btn-danger" onclick="return confirm('Apakah anda yakin?')"><span class="glyphicon glyphicon-trash"></span> </a> -->
                             </td>
                         </tr>
                     <?php

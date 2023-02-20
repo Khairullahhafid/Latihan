@@ -42,10 +42,11 @@ class User extends CI_Controller {
 
     }
 
-    public function delete()
+    public function del()
     {
         $id = $this->input->post('user_id');
-        $this->user_m->delete($id);
+        $this->user_m->del($id);
+
         if ($this->db->affected_rows() > 0 ){
             $this->session->set_flashdata('success', 'data berhasil dihapus');
         }

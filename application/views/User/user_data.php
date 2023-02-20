@@ -44,12 +44,12 @@
                             <td><?= $data->password ?></td>
                             <td><?= $data->level == 1 ? "Super User" : "User" ?></td>
                             <td class="text-center" width="160px">
+                                <form action="<?=site_url('user/del')?>" method="post">
                                 <a href="<?= site_url('user/edit/' . $data->user_id) ?>" class="btn btn-xs btn-warning">
                                     <i class="glyphicon glyphicon-pencil"></i>   Perbaharui    
                                 </a>
-                                <form action="<?=site_url('user/delete')?>" method="post">
-                                    <input type="hidden" value="<?$data->user_id?>">
-                                    <button class="btn btn-xs btn-danger">
+                                    <input type="hidden" name="user_id" value="<?=$data->user_id?>">
+                                    <button onclick="return confirm('Apakah anda yakin ingin menghapus data?')" class="btn btn-xs btn-danger">
                                         <i class="fa fa-trash"></i> Delete
                                     </button>
                                 </form>

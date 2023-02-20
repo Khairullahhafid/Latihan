@@ -30,7 +30,7 @@ class User_m extends CI_Model
         $this->db->insert('tb_pengguna',$params);
     }
 
-    public function delete($id)
+    public function del($id)
     {
        $this->db->where('user_id', $id);
        $this->db->delete('tb_pengguna');

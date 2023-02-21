@@ -33,7 +33,7 @@ class User extends CI_Controller {
         $this->template->load('template', 'user/user_tambah');
     } else {
         $post = $this->input->post(null, TRUE);
-        $this->user_m->add($post);
+        $this->user_m->edit($post);
         if ($this->db->affected_rows() > 0 ){
             $this->session->set_flashdata('success', 'data berhasil disimpan');
         }
@@ -41,7 +41,6 @@ class User extends CI_Controller {
     }
 
     }
-
     public function del()
     {
         $id = $this->input->post('user_id');
@@ -52,5 +51,44 @@ class User extends CI_Controller {
         }
         echo "<script>window.location='" .site_url('user')."';</script>";
     }
+    public function edit($id)
+    {
+        $this->form_validation->set_rules('nama','Nama','required');
+        $this->form_validation->set_rules('nama_user','User Nama','required|min_length[5]|is_unique[tb_pengguna.nama_user]');
+        if($this->input->post('password')){
+        $this->form_validation->set_rules('password','Password','required|min_length[5]');
+        $this->form_validation->set_rules('passkonf','Konfirmasi','required|min_length[5]|matches[password]', 
+        array ('matches'=>'%s Tidak Sesuai')
+        );
+        }
+        if($this->input->post('passkonf')){
+        $this->form_validation->set_rules('passkonf','Konfirmasi','required|min_length[5]|matches[password]', 
+        array ('matches'=>'%s Tidak Sesuai')
+        );
+        }
+        $this->form_validation->set_rules('level','Level Pengguna','required');
+        $this->form_validation->set_message('required', '%s Masih Kosong, silahkan diisi');
+        $this->form_validation->set_message('min_lenght', '{filed} minimal 5 karakter');
+        $this->form_validation->set_message('is_unique', '{filed} sudah terpakai, silahkan ganti');    
 
+        $this->form_validation->set_error_delimiters('<span class="help-block">','</span>');
+
+        if ($this->form_validation->run()==FALSE) {
+            $query = $this->user_m->get($id);
+            if($query->num_rows() > 0) {
+                $data['row'] = $query->row();
+                $this->template->load('template', 'user/user_edit', $data);
+            } else{
+                echo "<script>alert('Data tidak diteukan')";
+                echo "<script>window.location='" .site_url('user')."';</script>";
+            }
+        } else {
+            $post = $this->input->post(null, TRUE);
+            $this->user_m->add($post);
+            if ($this->db->affected_rows() > 0 ){
+                $this->session->set_flashdata('success', 'data berhasil disimpan');
+            }
+            echo "<script>window.location='" .site_url('user')."';</script>";
+        }
     }
+}

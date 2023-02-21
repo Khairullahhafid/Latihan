@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No Direct Script Access Allowed');
-class User_m extends CI_Model
+class Kategori_m extends CI_Model
 {
     public function get($id = null)
     {
@@ -25,7 +25,7 @@ class User_m extends CI_Model
             'nama' => $post['nama'],
             'updated' => date('Y-m-d H:i:s')
         ];
-        $this->db->where('kategori_id', $post[$id]);
+        $this->db->where('kategori_id', $post['id']);
         $this->db->update('tb_kategori', $params);
     }
     public function del($id)

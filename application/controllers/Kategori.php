@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit ('No direct script access allowed');
-class User extends CI_Controller {
+class Kategori extends CI_Controller {
     function __construct()
     {
         parent::__construct();
@@ -10,7 +10,7 @@ class User extends CI_Controller {
     }
     public function index()
     {
-        $data['row'] = $this->user_m->get();
+        $data['row'] = $this->kategori_m->get();
         $this->template->load('template','kategori/kategori_data',$data);
     }
     public function add()
@@ -19,18 +19,18 @@ class User extends CI_Controller {
         $kategori->kategori_id = null;
         $kategori->nama = null;
         $data = array(
-            'page'=>'add'
+            'page'=>'add',
             'row'=>$kategori
         );
         $this->template->load('template','kategori/kategori_form',$data);
     }
-    public function edit(id)
+    public function edit($id)
     {
         $query = $this->kategori_m->get($id);
         if($query->num_rows() > 0){
             $kategori = $query->row();
             $data = array(
-                'page'=>'edit'
+                'page'=>'edit',
                 'row'=>$kategori
             );
             $this->template->load('template','kategori/kategori_form',$data);
@@ -47,8 +47,8 @@ class User extends CI_Controller {
             if($this->db->affected_rows() > 0 ){
                 $this->session->set_flashdata('succes','Data berhasil ditambahkan');
             }
-        }else if(isset($_POST['add'])){
-                $this->kategori_m->add($post);
+        }else if(isset($_POST['edit'])){
+                $this->kategori_m->edit($post);
                 if($this->db->affected_rows() > 0 ){
                     $this->session->set_flashdata('succes','Data berhasil ditambahkan');
             }
@@ -56,13 +56,13 @@ class User extends CI_Controller {
 
         echo "<script>window.location='". site_url('kategori')."';</script>";
     }
-    public function delete($id)
+    public function del()
     {
+        $id = $this->input->post('kategori_id');
         $this->kategori_m->del($id);
         if ($this->db->affected_rows() > 0){
             $this->session->set_flashdata('success','Data berhasil dihapus');
         }
         echo "<script>window.location='". site_url('kategori')."';</script>";
     }
-
-
+}

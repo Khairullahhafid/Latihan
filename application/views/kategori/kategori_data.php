@@ -16,8 +16,8 @@
             <div>
       <!-- /.search form -->
             <div class="pull-right">
-                <a href="<?= site_url('user/add') ?>" class="btn btn-sm btn-primary">
-                    <i class="fa fa-user-plus"></i><b> Tambah</b>
+                <a href="<?= site_url('kategori/add') ?>" class="btn btn-sm btn-primary">
+                    <i class="fa fa-kategori-plus"></i><b> Tambah</b>
                 </a>
             </div>
         <div class="box-body table-reponsive">
@@ -40,10 +40,10 @@
                             <td><?= $no++; ?></td>
                             <td><?= $data->nama ?></td>
                             <td><?= $data->created ?></td>
-                            <td><?= $data->update ?></td>
+                            <td><?= $data->updated ?></td>
                             <td class="text-center" width="160px">
-                                <form action="<?=site_url('user/del')?>" method="post">
-                                <a href="<?= site_url('user/edit/' . $data->kategori_id) ?>" class="btn btn-xs btn-warning">
+                                <form action="<?=site_url('kategori/del')?>" method="post">
+                                <a href="<?= site_url('kategori/edit/' . $data->kategori_id) ?>" class="btn btn-xs btn-warning">
                                     <i class="glyphicon glyphicon-pencil"></i>   Perbaharui    
                                 </a>
                                     <input type="hidden" name="kategori_id" value="<?=$data->kategori_id?>">
@@ -51,7 +51,7 @@
                                         <i class="fa fa-trash"></i> Delete
                                     </button>
                                 </form>
-                                <!-- <a href="<?= site_url('user/delete/' . $data->kategori_idss) ?>" class="btn btn-xs btn-danger" onclick="return confirm('Apakah anda yakin?')"><span class="glyphicon glyphicon-trash"></span> </a> -->
+                                <!-- <a href="<?= site_url('kategori/delete/' . $data->kategori_idss) ?>" class="btn btn-xs btn-danger" onclick="return confirm('Apakah anda yakin?')"><span class="glyphicon glyphicon-trash"></span> </a> -->
                             </td>
                         </tr>
                     <?php

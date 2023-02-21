@@ -29,19 +29,17 @@
                             </div>
 
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10>
-                                <button type="submit" name=<?=$page?> class="btn btn-success"> 
-                                        <i class="fa fa-paper-plane"></i> Simpan
-                                    </button>
-                                    <button type="reset" class="btn btn-warning"> 
-                                        <i class="fa fa-paper-times"></i> Batal
-                                    </button>
-                                    <a href="<?=site_url('kategori')?>"> <i class="btn btn-warning">
-                                        <i class="fa fa-paper-undo"></i> Kembali </i>
-                                    </a>
-                                    <!-- <button type="submit" class="btn btn-success"> 
-                                        <i class="fa fa-paper-undo"></i> Kembali
-                                    </button> -->
+                                <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" name=<?=$page?> class="btn btn-success">
+                                    <i class="fa fa-paper-plane"></i> Simpan
+                                </button>
+                                <button type="reset" class="btn btn-warning"> 
+                                    <i class="fa fa-paper-times"></i> Batal
+                                </button>
+                                <a href="<?=site_url('kategori')?>"> <i class="btn btn-warning">
+                                    <i class="fa fa-paper-undo"></i> Kembali </i>
+                                </a>
+        
                                 </div>
                             </div>
                         </form>

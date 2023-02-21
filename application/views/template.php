@@ -227,6 +227,9 @@
         <li>
            <a href ="<?=site_url('kategori')?>"><i class = " fa fa-book"></i> <span> kategori</span></a>
         </li>
+        <li>
+           <a href ="<?=site_url('satuan')?>"><i class = " fa fa-basket"></i> <span> satuan</span></a>
+        </li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Warning</span></a></li>

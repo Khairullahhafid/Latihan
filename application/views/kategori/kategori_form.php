@@ -36,9 +36,12 @@
                                     <button type="reset" class="btn btn-warning"> 
                                         <i class="fa fa-paper-times"></i> Batal
                                     </button>
-                                    <button type="submit" class="btn btn-success"> 
+                                    <a href="<?=site_url('kategori')?>"> <i class="btn btn-warning">
+                                        <i class="fa fa-paper-undo"></i> Kembali </i>
+                                    </a>
+                                    <!-- <button type="submit" class="btn btn-success"> 
                                         <i class="fa fa-paper-undo"></i> Kembali
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                         </form>

@@ -28,18 +28,15 @@
                                 </div>
                                 <label class="col-sm-2 control-label">Alamat</label>
                                 <div class="col-sm-10">
-                                    <input type="hidden" name="id" value="<?=$row->supplier_id?>">
-                                    <input type = "text" name="nama" value="<?=$row->alamat?>"" class = "form-control" required>
+                                    <input type = "text" name="alamat" value="<?=$row->alamat?>"" class = "form-control" required>
                                 </div>
                                 <label class="col-sm-2 control-label">No Telp</label>
                                 <div class="col-sm-10">
-                                    <input type="hidden" name="id" value="<?=$row->supplier_id?>">
-                                    <input type = "text" name="nama" value="<?=$row->telp?>"" class = "form-control" required>
+                                    <input type = "text" name="telp" value="<?=$row->telp?>"" class = "form-control" required>
                                 </div>
                                 <label class="col-sm-2 control-label">Deskripsi</label>
                                 <div class="col-sm-10">
-                                    <input type="hidden" name="id" value="<?=$row->supplier_id?>">
-                                    <input type = "text" name="nama" value="<?=$row->deskripsi?>"" class = "form-control" required>
+                                    <input type = "text" name="deskripsi" value="<?=$row->deskripsi?>"" class = "form-control" required>
                                 </div>
                             </div>
 

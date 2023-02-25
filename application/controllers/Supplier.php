@@ -18,6 +18,9 @@ class Supplier extends CI_Controller {
         $supplier = new stdClass();
         $supplier->supplier_id = null;
         $supplier->nama = null;
+        $supplier->alamat = null;
+        $supplier->telp = null;
+        $supplier->deskripsi = null;
         $data = array(
             'page'=>'add',
             'row'=>$supplier

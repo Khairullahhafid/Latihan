@@ -16,14 +16,8 @@ class Supplier_m extends CI_Model
     {
         $params = [
             'nama' => $post['nama'],
-        ];
-        $params = [
             'alamat' => $post['alamat'],
-        ];
-        $params = [
             'telp' => $post['telp'],
-        ];
-        $params = [
             'deskripsi' => $post['deskripsi'],
         ];
         $this->db->insert('tb_supplier',$params);

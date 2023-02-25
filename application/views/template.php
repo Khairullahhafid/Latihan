@@ -228,7 +228,10 @@
            <a href ="<?=site_url('kategori')?>"><i class = " fa fa-book"></i> <span> kategori</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('satuan')?>"><i class = " fa fa-basket"></i> <span> satuan</span></a>
+           <a href ="<?=site_url('satuan')?>"><i class = " fa fa-balance-scale"></i> <span> satuan</span></a>
+        </li>
+        <li>
+           <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-users"></i> <span> supplier</span></a>
         </li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Important</span></a></li>

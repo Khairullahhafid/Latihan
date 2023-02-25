@@ -25,7 +25,7 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>satuan</th>
+                        <th>Satuan</th>
                         <th>Created</th>
                         <th>Update</th>
                         <th>Aksi</th>

@@ -25,7 +25,7 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>kategori</th>
+                        <th>Kategori</th>
                         <th>Created</th>
                         <th>Update</th>
                         <th>Aksi</th>

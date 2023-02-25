@@ -17,7 +17,8 @@
       <!-- /.search form -->
             <div class="pull-right">
                 <a href="<?= site_url('supplier/add') ?>" class="btn btn-sm btn-primary">
-                    <i class="fa fa-supplier-plus"></i><b> Tambah</b>
+                    <i class="fa fa-supplier-plus"></i>
+                    <b> Tambah</b>
                 </a>
             </div>
         <div class="box-body table-reponsive">
@@ -25,10 +26,10 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>supplier</th>
-                        <th>alamat</th>
-                        <th>telp</th>
-                        <th>deskripsi</th>
+                        <th>Nama Supplier</th>
+                        <th>Alamat</th>
+                        <th>Telp</th>
+                        <th>Deskripsi</th>
                         <th>Created</th>
                         <th>Update</th>
                         <th>Aksi</th>

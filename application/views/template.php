@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Blank Page</title>
+  <title>Mypos | Blank Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -40,7 +40,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>My</b>POS</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -222,21 +222,18 @@
           <a href ="<?site_url('dashboard')?>"><i class = " fa fa-dashboard"></i> <span> Dashboard</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('user')?>"><i class = " fa fa-user"></i> <span> user</span></a>
-        </li>
-        <li>
            <a href ="<?=site_url('kategori')?>"><i class = " fa fa-book"></i> <span> kategori</span></a>
         </li>
         <li>
            <a href ="<?=site_url('satuan')?>"><i class = " fa fa-balance-scale"></i> <span> satuan</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-users"></i> <span> supplier</span></a>
+           <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-truck"></i> <span> supplier</span></a>
         </li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li class="header">PENGATURAN</li>
+        <li>
+           <a href ="<?=site_url('user')?>"><i class = " fa fa-user"></i> <span> user</span></a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

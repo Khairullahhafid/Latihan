@@ -28,7 +28,7 @@
                                 </div>
                                 <label class="col-sm-2 control-label">Alamat*</label>
                                 <div class="col-sm-11">
-                                    <textarea input type = "text" name="alamat" value="<?=$row->alamat?>"" class = "form-control" required></textarea/>
+                                    <input type = "text" name="alamat" value="<?=$row->alamat?>"" class = "form-control" required>
                                 </div>
                                 <label class="col-sm-2 control-label">No Telp*</label>
                                 <div class="col-sm-11">
@@ -36,7 +36,7 @@
                                 </div>
                                 <label class="col-sm-2 control-label">Deskripsi</label>
                                 <div class="col-sm-11">
-                                    <textarea input type = "text" name="deskripsi" value="<?=$row->deskripsi?>"" class = "form-control"></textarea/>
+                                    <input type = "text" name="deskripsi" value="<?=$row->deskripsi?>"" class = "form-control">
                                 </div>
                             </div>
 

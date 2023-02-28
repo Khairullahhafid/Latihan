@@ -38,7 +38,7 @@
     <!-- Logo -->
     <a href="<?=base_url()?>assets/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>M</b>P</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>My</b>POS</span>
     </a>
@@ -222,17 +222,17 @@
           <a href ="<?site_url('dashboard')?>"><i class = " fa fa-dashboard"></i> <span> Dashboard</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('kategori')?>"><i class = " fa fa-book"></i> <span> kategori</span></a>
+           <a href ="<?=site_url('kategori')?>"><i class = " fa fa-book"></i> <span> Kategori</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('satuan')?>"><i class = " fa fa-balance-scale"></i> <span> satuan</span></a>
+           <a href ="<?=site_url('satuan')?>"><i class = " fa fa-balance-scale"></i> <span> Satuan</span></a>
         </li>
         <li>
-           <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-truck"></i> <span> supplier</span></a>
+           <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-truck"></i> <span> Supplier</span></a>
         </li>
-        <li class="header">PENGATURAN</li>
+        <li class="header">PENGATURAN AKUN</li>
         <li>
-           <a href ="<?=site_url('user')?>"><i class = " fa fa-user"></i> <span> user</span></a>
+           <a href ="<?=site_url('user')?>"><i class = " fa fa-user"></i> <span> User</span></a>
         </li>
       </ul>
     </section>

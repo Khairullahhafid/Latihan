@@ -20,6 +20,10 @@
                     <i class="fa fa-supplier-plus"></i>
                     <b> Tambah</b>
                 </a>
+                <a href="http://localhost/phpmyadmin/index.php?route=/sql&db=db_pos&table=tb_supplier&pos=0" class="btn btn-sm btn-warning">
+                    <i class="glyphicon glyphicon-book"></i> 
+                    <b>DB Show</b>
+                </a>
             </div>
         <div class="box-body table-reponsive">
             <table class="table table-bordered table-striped table-hover" id="TableAip">

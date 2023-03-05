@@ -1,5 +1,5 @@
 <section class="content-header">
-    <h1> Costumer Barang
+    <h1> Costumer
         <small>Data</small>
     </h1>
     <ol class="breadcrumb">
@@ -31,9 +31,9 @@
                     <tr>
                         <th>No</th>
                         <th>Nama costumer</th>
+                        <th>Kelamin</th>
                         <th>Alamat</th>
                         <th>Telp</th>
-                        <th>Deskripsi</th>
                         <th>Created</th>
                         <th>Update</th>
                         <th>Aksi</th>
@@ -47,9 +47,9 @@
                         <tr>
                             <td><?= $no++; ?></td>
                             <td><?= $data->nama ?></td>
+                            <td><?= $data->kelamin ?></td>
                             <td><?= $data->alamat ?></td>
                             <td><?= $data->telp ?></td>
-                            <td><?= $data->deskripsi ?></td>
                             <td><?= $data->created ?></td>
                             <td><?= $data->updated ?></td>
                             <td class="text-center" width="160px">

@@ -230,6 +230,9 @@
         <li>
            <a href ="<?=site_url('supplier')?>"><i class = " fa  fa-truck"></i> <span> Supplier</span></a>
         </li>
+        <li>
+           <a href ="<?=site_url('costumer')?>"><i class = " fa  fa-child"></i> <span> Costumer</span></a>
+        </li>
         <li class="header">PENGATURAN AKUN</li>
         <li>
            <a href ="<?=site_url('user')?>"><i class = " fa fa-user"></i> <span> User</span></a>

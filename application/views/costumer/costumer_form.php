@@ -30,8 +30,8 @@
                                 <div class="col-sm-11">
                                     <select name="kelamin" value="<?=$row->kelamin?>"" class = "form-control">
                                     <option value="">Pilih</option>
-                                    <option value="L">Laki-Laki</option>
-                                    <option value="P">Perempuan</option>
+                                    <option value="L" <?=$row-> kelamin == 'L' ? 'selected' : ''?>>Laki-Laki</option>
+                                    <option value="P" <?=$row-> kelamin == 'P' ? 'selected' : ''?>>Perempuan</option>
                                     </select>
                                 </div>
                                 <label class="col-sm-2 control-label">Alamat*</label>

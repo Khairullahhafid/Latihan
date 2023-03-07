@@ -52,3 +52,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'auth';
 $route['404_override'] = 'notFound';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['costumer'] = 'pelanggan';
+$route['costumer/add'] = 'pelanggan/add';
+$route['costumer/proses'] = 'pelanggan/proses';
+$route['costumer/edit/(:num)'] = 'pelanggan/edit/$1';
+$route['costumer/del'] = 'pelanggan/del';
